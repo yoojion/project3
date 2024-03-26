@@ -190,7 +190,7 @@ main .btn a {
   width: 70px;
   height: 70px;
   z-index: 999;
-  background: url(../../source/image/3d-c.png) center center/contain no-repeat;
+  background: url(../source/image/3d-c.png) center center/contain no-repeat;
 }
 main .section1 {
   width: 100%;
