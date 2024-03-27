@@ -50,13 +50,13 @@ footer {
         left: 2px;
       }
       &:hover img {
-        background: url(../../source/image/ico_introduction_active.png) center
+        background: url(../source/image/ico_introduction_active.png) center
           center/contain no-repeat;
       }
       img {
         width: 24px;
         height: 21px;
-        background: url(../../source/image/ico_introduction.png) center
+        background: url(../source/image/ico_introduction.png) center
           center/contain no-repeat;
       }
     }
@@ -75,6 +75,18 @@ footer {
         line-height: 28px;
         color: #585858;
         font-size: 28px;
+        &:nth-child(1) {
+          font-size: 23px;
+          line-height: 23px;
+        }
+        &:nth-child(3) {
+          background: url(../source/image/behance.svg) center center/contain
+            no-repeat;
+        }
+        &:nth-child(4) {
+          background: url(../source/image/youtube.svg) center center/contain
+            no-repeat;
+        }
       }
     }
     .bottom {

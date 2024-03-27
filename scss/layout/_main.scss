@@ -1,20 +1,13 @@
 main {
   width: 100%;
-  .btn {
+  .dtbtn {
     position: fixed;
-    left: 20px;
-    top: 20px;
+    right: 20px;
+    bottom: 20px;
     width: 70px;
     height: 70px;
     z-index: 999;
-    a {
-      right: 20px;
-      bottom: 20px;
-      width: 70px;
-      height: 70px;
-      z-index: 999;
-      background: url(../source/image/3d-c.png) center center/contain no-repeat;
-    }
+    background: url(../source/image/3d-c.png) center center/contain no-repeat;
   }
   .section1 {
     width: 100%;
@@ -70,58 +63,61 @@ main {
         line-height: 80px;
       }
     }
-    .deco {
-      width: 285px;
-      height: 285px;
-    }
-    .num1 {
-      position: absolute;
-      background: url(../../source/image/bg_visual_round_y.png) center
-        center/contain no-repeat;
-      top: 320px;
-      left: 0;
-      z-index: 1;
-    }
-    .num2 {
-      position: absolute;
-      background: url(../../source/image/bg_visual_bland_op.png) center
-        center/contain no-repeat;
-      top: 130px;
-      left: 150px;
-      z-index: 2;
-    }
-    .num3 {
-      position: absolute;
-      background: url(../../source/image/bg_visual_bland.png) center
-        center/contain no-repeat;
-      top: -20px;
-      left: 290px;
-      z-index: 3;
-    }
-    .num4 {
-      position: absolute;
-      background: url(../../source/image/bg_visual_noise.png) center
-        center/contain no-repeat;
-      bottom: 100px;
-      left: 32%;
-      z-index: 1;
-    }
-    .num5 {
-      position: absolute;
-      position: absolute;
-      background: url(../../source/image/bg_visual_round_dot.png) center
-        center/contain no-repeat;
-      bottom: 48%;
-      right: 5%;
-      z-index: 1;
-    }
-    .num6 {
-      position: absolute;
-      background: url(../../source/image/bg_visual_round_mov_y.png) center
-        center/contain no-repeat;
-      bottom: 30%;
-      right: 3%;
-      z-index: 1;
+    .decowrap {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .deco {
+        width: 285px;
+        height: 285px;
+        position: absolute;
+      }
+      .num1 {
+        background: url(../source/image/bg_visual_round_y.png) center
+          center/contain no-repeat;
+        top: 320px;
+        left: 0;
+        z-index: 1;
+      }
+      .num2 {
+        background: url(../source/image/bg_visual_bland_op.png) center
+          center/contain no-repeat;
+        top: 130px;
+        left: 150px;
+        z-index: 2;
+      }
+      .num3 {
+        background: url(../source/image/bg_visual_bland.png) center
+          center/contain no-repeat;
+        top: -20px;
+        left: 290px;
+        z-index: 3;
+      }
+      .num4 {
+        background: url(../source/image/bg_visual_noise.png) center
+          center/contain no-repeat;
+        top: 580px;
+        left: 30%;
+        z-index: 3;
+      }
+      .num5 {
+        background: url(../source/image/bg_visual_round_dot.png) center
+          center/contain no-repeat;
+        top: 220px;
+        left: 70%;
+        z-index: 3;
+      }
+      .num6 {
+        background: url(../source/image/bg_visual_round_mov_y.png) center
+          center/contain no-repeat;
+        top: 380px;
+        left: 80%;
+        z-index: 3;
+      }
     }
   }
   .section2 {
@@ -154,7 +150,7 @@ main {
         width: 836px;
         height: 447px;
         overflow: hidden;
-        background: url(../../source/image/Plan_gif.gif) center center/contain
+        background: url(../source/image/Plan_gif.gif) center center/contain
           no-repeat;
       }
       .text_wrap {
@@ -179,7 +175,7 @@ main {
         span {
           width: 25px;
           height: 38px;
-          background: url(../../source/image/btn_next.png) center center/contain
+          background: url(../source/image/btn_next.png) center center/contain
             no-repeat;
         }
       }
@@ -243,7 +239,7 @@ main {
       height: 166px;
       top: 120px;
       right: 40px;
-      background: url(../../source/image/bg_ask.png) center center/contain
+      background: url(../source/image/bg_ask.png) center center/contain
         no-repeat;
       transform: rotate(345deg);
       box-shadow: 9px 9px #e6e6e6;

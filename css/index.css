@@ -173,18 +173,51 @@ html {
   text-transform: uppercase;
 }
 
+header {
+  width: 100%;
+}
+header .header_wrap {
+  position: relative;
+  width: 100%;
+  height: 110px;
+  font-size: 19px;
+  font-weight: 500;
+  color: #000000;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header_wrap .logo {
+  width: 180px;
+  height: 20px;
+  background: url(../source/image/logo.svg) center center/cover;
+}
+header .header_wrap .contact {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+header .header_wrap .nav ul {
+  width: 542px;
+  justify-content: flex-end;
+  gap: 14.2857142857%;
+}
+header .header_wrap .nav ul li {
+  height: 30px;
+  text-align: right;
+}
+header .header_wrap .nav ul li:hover:after {
+  content: "";
+  width: 100px;
+  height: 3px;
+  background: #000000;
+}
+
 main {
   width: 100%;
 }
-main .btn {
+main .dtbtn {
   position: fixed;
-  left: 20px;
-  top: 20px;
-  width: 70px;
-  height: 70px;
-  z-index: 999;
-}
-main .btn a {
   right: 20px;
   bottom: 20px;
   width: 70px;
@@ -247,52 +280,55 @@ main .section1 .button a {
   color: #000000;
   line-height: 80px;
 }
-main .section1 .deco {
+main .section1 .decowrap {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .section1 .decowrap .deco {
   width: 285px;
   height: 285px;
-}
-main .section1 .num1 {
   position: absolute;
-  background: url(../../source/image/bg_visual_round_y.png) center center/contain no-repeat;
+}
+main .section1 .decowrap .num1 {
+  background: url(../source/image/bg_visual_round_y.png) center center/contain no-repeat;
   top: 320px;
   left: 0;
   z-index: 1;
 }
-main .section1 .num2 {
-  position: absolute;
-  background: url(../../source/image/bg_visual_bland_op.png) center center/contain no-repeat;
+main .section1 .decowrap .num2 {
+  background: url(../source/image/bg_visual_bland_op.png) center center/contain no-repeat;
   top: 130px;
   left: 150px;
   z-index: 2;
 }
-main .section1 .num3 {
-  position: absolute;
-  background: url(../../source/image/bg_visual_bland.png) center center/contain no-repeat;
+main .section1 .decowrap .num3 {
+  background: url(../source/image/bg_visual_bland.png) center center/contain no-repeat;
   top: -20px;
   left: 290px;
   z-index: 3;
 }
-main .section1 .num4 {
-  position: absolute;
-  background: url(../../source/image/bg_visual_noise.png) center center/contain no-repeat;
-  bottom: 100px;
-  left: 32%;
-  z-index: 1;
+main .section1 .decowrap .num4 {
+  background: url(../source/image/bg_visual_noise.png) center center/contain no-repeat;
+  top: 580px;
+  left: 30%;
+  z-index: 3;
 }
-main .section1 .num5 {
-  position: absolute;
-  position: absolute;
-  background: url(../../source/image/bg_visual_round_dot.png) center center/contain no-repeat;
-  bottom: 48%;
-  right: 5%;
-  z-index: 1;
+main .section1 .decowrap .num5 {
+  background: url(../source/image/bg_visual_round_dot.png) center center/contain no-repeat;
+  top: 220px;
+  left: 70%;
+  z-index: 3;
 }
-main .section1 .num6 {
-  position: absolute;
-  background: url(../../source/image/bg_visual_round_mov_y.png) center center/contain no-repeat;
-  bottom: 30%;
-  right: 3%;
-  z-index: 1;
+main .section1 .decowrap .num6 {
+  background: url(../source/image/bg_visual_round_mov_y.png) center center/contain no-repeat;
+  top: 380px;
+  left: 80%;
+  z-index: 3;
 }
 main .section2 .player {
   padding-top: 56.25%;
@@ -324,7 +360,7 @@ main .section3 .section3_bottom_wrap .img {
   width: 836px;
   height: 447px;
   overflow: hidden;
-  background: url(../../source/image/Plan_gif.gif) center center/contain no-repeat;
+  background: url(../source/image/Plan_gif.gif) center center/contain no-repeat;
 }
 main .section3 .section3_bottom_wrap .text_wrap {
   width: 600px;
@@ -349,7 +385,7 @@ main .section3 .section3_bottom_wrap .veiw_button p {
 main .section3 .section3_bottom_wrap .veiw_button span {
   width: 25px;
   height: 38px;
-  background: url(../../source/image/btn_next.png) center center/contain no-repeat;
+  background: url(../source/image/btn_next.png) center center/contain no-repeat;
 }
 main .section3 .section3_text_wrap {
   overflow: hidden;
@@ -406,7 +442,7 @@ main .section4 .fix {
   height: 166px;
   top: 120px;
   right: 40px;
-  background: url(../../source/image/bg_ask.png) center center/contain no-repeat;
+  background: url(../source/image/bg_ask.png) center center/contain no-repeat;
   transform: rotate(345deg);
   box-shadow: 9px 9px #e6e6e6;
 }
@@ -423,46 +459,6 @@ main .section4 .fix p {
 main .section4 .fix p .fix_btn {
   width: 25px;
   height: 10px;
-}
-
-header {
-  width: 100%;
-}
-header .header_wrap {
-  position: relative;
-  width: 100%;
-  height: 110px;
-  font-size: 19px;
-  font-weight: 500;
-  color: #000000;
-  align-items: center;
-  justify-content: space-between;
-}
-header .header_wrap .logo {
-  width: 180px;
-  height: 20px;
-  background: url(../../source/image/logo.jpg) center center/cover;
-}
-header .header_wrap .contact {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-header .header_wrap .nav ul {
-  width: 542px;
-  justify-content: flex-end;
-  gap: 14.2857142857%;
-}
-header .header_wrap .nav ul li {
-  height: 30px;
-  text-align: right;
-}
-header .header_wrap .nav ul li:hover:after {
-  content: "";
-  width: 100px;
-  height: 3px;
-  background: #000000;
 }
 
 footer {
@@ -518,12 +514,12 @@ footer .footer_top .company::after {
   left: 2px;
 }
 footer .footer_top .company:hover img {
-  background: url(../../source/image/ico_introduction_active.png) center center/contain no-repeat;
+  background: url(../source/image/ico_introduction_active.png) center center/contain no-repeat;
 }
 footer .footer_top .company img {
   width: 24px;
   height: 21px;
-  background: url(../../source/image/ico_introduction.png) center center/contain no-repeat;
+  background: url(../source/image/ico_introduction.png) center center/contain no-repeat;
 }
 footer .footer_bottom .top {
   margin-top: 25px;
@@ -539,6 +535,16 @@ footer .footer_bottom .top li {
   line-height: 28px;
   color: #585858;
   font-size: 28px;
+}
+footer .footer_bottom .top li:nth-child(1) {
+  font-size: 23px;
+  line-height: 23px;
+}
+footer .footer_bottom .top li:nth-child(3) {
+  background: url(../source/image/behance.svg) center center/contain no-repeat;
+}
+footer .footer_bottom .top li:nth-child(4) {
+  background: url(../source/image/youtube.svg) center center/contain no-repeat;
 }
 footer .footer_bottom .bottom {
   margin-top: 15px;
