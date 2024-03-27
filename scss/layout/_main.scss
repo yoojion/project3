@@ -98,11 +98,26 @@ main {
         z-index: 3;
       }
       .num4 {
-        background: url(../source/image/bg_visual_noise.png) center
-          center/contain no-repeat;
+        background: linear-gradient(
+            to top,
+            rgba(255, 255, 255, 0) 10%,
+            rgba(255, 255, 255, 0.5) 50%,
+            rgba(255, 255, 255, 1) 100%
+          ),
+          url(../source/image/bg_visual_noise.png) center center/contain
+            no-repeat;
         top: 580px;
         left: 30%;
         z-index: 3;
+        animation: upup 3s infinite;
+      }
+      @keyframes upup {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
       }
       .num5 {
         background: url(../source/image/bg_visual_round_dot.png) center
@@ -110,6 +125,15 @@ main {
         top: 220px;
         left: 70%;
         z-index: 3;
+        animation: roro 10s infinite;
+      }
+      @keyframes roro {
+        0% {
+          rotate: 0deg;
+        }
+        100% {
+          rotate: 360deg;
+        }
       }
       .num6 {
         background: url(../source/image/bg_visual_round_mov_y.png) center
