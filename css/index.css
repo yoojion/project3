@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Archivo */
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css);
 @font-face {
@@ -432,6 +433,10 @@ main .section4 {
   width: 100%;
   height: 1080px;
   position: relative;
+  /* 삭제할부분 */
+  margin-top: 50px;
+  background: url(../source/image/last.jpg) center center/contain no-repeat;
+  /*  */
 }
 main .section4 p {
   font-size: 80px;
