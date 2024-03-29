@@ -407,7 +407,6 @@ main .section3 .section3_bottom_wrap .veiw_button span {
   background: url(../source/image/btn_next.png) center center/contain no-repeat;
 }
 main .section3 .section3_text_wrap {
-  overflow: hidden;
   margin-top: 70px;
 }
 main .section3 .section3_text_wrap .top p:nth-child(even) {
@@ -421,6 +420,9 @@ main .section3 .section3_text_wrap .bottom p:nth-child(even) {
   color: #fff;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
+main .section3 .section3_text_wrap marquee {
+  position: relative;
+}
 main .section3 .section3_text_wrap p {
   margin-left: 80px;
   width: 100%;
@@ -428,6 +430,7 @@ main .section3 .section3_text_wrap p {
   font-size: 80px;
   font-weight: 400;
   line-height: 88px;
+  display: inline;
 }
 main .section4 {
   width: 100%;
