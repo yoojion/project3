@@ -129,10 +129,10 @@ main {
       }
       @keyframes roro {
         0% {
-          rotate: 0deg;
+          opacity: 0;
         }
         100% {
-          rotate: 360deg;
+          opacity: 1;
         }
       }
       .num6 {

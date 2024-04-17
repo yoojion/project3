@@ -338,10 +338,10 @@ main .section1 .decowrap .num5 {
 }
 @keyframes roro {
   0% {
-    rotate: 0deg;
+    opacity: 0;
   }
   100% {
-    rotate: 360deg;
+    opacity: 1;
   }
 }
 main .section1 .decowrap .num6 {
