@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* Archivo */
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css);
+@import url(../scss/base/all.min.css);
 @font-face {
   font-family: "Archivo";
   src: url("../source/font/Archivo-VariableFont_wdth,wght.ttf");
@@ -582,4 +582,17 @@ footer .footer_bottom .bottom {
   color: #bdbdbd;
   text-align: right;
   text-transform: none;
+}
+footer .validation {
+  width: 10%;
+}
+footer .validation .val1 > img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+footer .validation .val2 > img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }/*# sourceMappingURL=index.css.map */

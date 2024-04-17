@@ -98,4 +98,15 @@ footer {
       text-transform: none;
     }
   }
+.validation {
+    width: 10%;
+  }
+.validation .val1 > img {
+    width: 100%;
+    object-fit: contain;
+  }
+.validation .val2 > img {
+    width: 100%;
+    object-fit: contain;
+  }
 }
