@@ -569,10 +569,10 @@ footer .footer_bottom .top li:nth-child(1) {
   font-size: 23px;
   line-height: 23px;
 }
-footer .footer_bottom .top li:nth-child(3) {
+footer .footer_bottom .top li:nth-child(2) {
   background: url(../source/image/behance.svg) center center/contain no-repeat;
 }
-footer .footer_bottom .top li:nth-child(4) {
+footer .footer_bottom .top li:nth-child(3) {
   background: url(../source/image/youtube.svg) center center/contain no-repeat;
 }
 footer .footer_bottom .bottom {
